@@ -52,23 +52,7 @@ namespace BestReads.Server
                 {
                     endpoints.MapControllers();
                 })
-                .ApplyMigrations();
-
-            //app
-            //    .UseSwaggerUI()
-            //    .UseRouting()
-            //    .UseCors(options => options
-            //        .AllowAnyOrigin()
-            //        .AllowAnyHeader()
-            //        .AllowAnyMethod())
-            //    .UseMiddleware<JwtMiddleware>()
-            //    .UseAuthentication()
-            //    .UseAuthorization()
-            //    // custom jwt auth middleware
-            //    .UseEndpoints(endpoints =>
-            //    {
-            //        endpoints.MapControllers();
-            //    }).ApplyMigration();
+                .ApplyMigrations();           
         }
     }
 }
