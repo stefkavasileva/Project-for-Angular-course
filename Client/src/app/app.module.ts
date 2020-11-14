@@ -8,18 +8,26 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslocoRootModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
