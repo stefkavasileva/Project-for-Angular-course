@@ -1,1 +1,1 @@
-# Project-forAngular-course
+# Project-for-Angular-course
